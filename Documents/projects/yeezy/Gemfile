@@ -1,0 +1,18 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'dm-core'
+gem 'dm-migrations'
+gem 'dm-postgres-adapter'
+gem 'mongo'
+gem 'sinatra-flash'
+gem 'sinatra-basic-auth'
+
+
+group :development do
+	gem 'shotgun'
+end
+
+group :production do
+	gem 'thin'
+end
